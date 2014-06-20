@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{ Retries a code block the given number of times }
   gem.homepage      = "https://github.com/borfd/retrier"
   gem.license       = "MIT"
-
+  gem.summary       = %q{Execute any code block an arbitrary number of times. Optionally supply exception handlers.}
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
