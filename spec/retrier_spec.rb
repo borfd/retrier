@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'retrier'
 
 class MyCustomTestException < RuntimeError; end
 class MyCustomTestExceptionB < RuntimeError; end
