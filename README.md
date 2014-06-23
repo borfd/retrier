@@ -11,6 +11,13 @@ Retrier.new(max_tries: 5) do
 end
 ```
 
+###Specify which exceptions to catch
+```ruby
+Retrier.new(max_tries: 3, rescue: [MyCustomException, OtherException]) do
+...
+end
+```
+
 ###Exception handlers
 If supplied with a list of handler functions, `Retrier` will call the handler method. If there isn't a registered handler for the raised exception it will retry the block.
 ```ruby
